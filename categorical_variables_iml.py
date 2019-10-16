@@ -6,16 +6,15 @@ Intermediate Machine Learning Home Page
 https://www.kaggle.com/alexisbcook/categorical-variables
 """
 
-
+# 获取训练年数据中的对象型字段
 # Get list of categorical variables
 s = (X_train.dtypes == 'object')
 object_cols = list(s[s].index)
-
 print("Categorical variables:")
 print(object_cols)
 
 
-
+# 扔掉对象型字段，
 drop_X_train = X_train.select_dtypes(exclude=['object'])
 drop_X_valid = X_valid.select_dtypes(exclude=['object'])
 
