@@ -1,4 +1,10 @@
 """
+缺失值处理
+
+code source:
+Intermediate Machine Learning Home Page
+https://www.kaggle.com/alexisbcook/missing-values
+
 """
 
 # 直接扔掉缺失值
